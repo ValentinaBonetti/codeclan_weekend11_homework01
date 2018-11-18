@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
@@ -23,7 +24,7 @@ public class FlightManagerTest {
         passengers = new ArrayList<Passenger>();
         passengers.add(passenger_01);
         passengers.add(passenger_02);
-        flight = new Flight("FR756",passengers,PlaneType.BOEING747_100,"Pisa","Glasgow","2018-12-22-0940");
+        flight = new Flight("FR756",passengers,PlaneType.BOEING747_100,"Pisa","Glasgow", LocalDate.of(2019,01,30));
         manager = new FlightManager();
 
     }
