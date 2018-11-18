@@ -10,4 +10,8 @@ public class FlightManager {
         return flight.howMuchBaggageWeightRemains();
     }
 
+    public void assignSeatNumber(Flight flight, Passenger passenger) {
+        passenger.setSeatNumber(flight.giveRandomSeatNumber(passenger));
+    }
+
 }
